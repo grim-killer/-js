@@ -1,0 +1,31 @@
+.resume{
+    background:darkgray;
+    padding: 30px;
+    color: white;
+}
+h1{
+    margin: 0;
+}
+
+h2{
+    background: gray;
+    float: left;
+    margin: 0;
+    padding: 30px;
+}
+h3{
+    margin-top: 20px;
+    display: inline-block;
+}
+.lianxi,.nengli{
+   border: 1px solid lightgray;
+    height: 91px;
+}
+
+.innercontent{
+    height: 91px;
+}
+
+.nengli h3{
+   display: inline;
+}

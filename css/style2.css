@@ -1,0 +1,20 @@
+.resume{
+    box-sizing: border-box;
+    float: left;
+    background: aqua;
+    height: 850px;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+}
+.content{
+    float: left;
+    padding: 20px;
+}
+.lianxi h3{
+    display: inline-block;
+}
+
+.nengli h3{
+    margin-bottom: 0;
+}
