@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select id="year-select" onchange="timeChange()">
+</select>
+
+<select id="month-select" onchange="timeChange()">
+</select>
+
+<select id="day-select" onchange="timeChange()">
+
+</select>
+
+<select id="hour-select" onchange="timeChange()">
+</select>
+
+<select id="minite-select" onchange="timeChange()">
+</select>
+
+<select id="second-select" onchange="timeChange()">
+</select>
+
+<p id="result-wrapper">现在距离 2001年1月1日星期X HH:MM:SS 还有 X 天 X 小时 X 分 X 秒</p>
+</body>
+<script>
+//js中创建option的方法还有哪些？
+var year=document.getElementById('year-select');
+var month=document.getElementById('month-select');
+var day=document.getElementById('day-select');
+var hour=document.getElementById('hour-select');
+var minite=document.getElementById('minite-select');
+var second=document.getElementById('second-select');
+
+function createYearOp() {
+    var date = new Date();
+    for(var i=2000;i<date.getFullYear()+1;i++){
+        var opt=document.createElement('option');
+        opt.value=i;
+        opt.innerText=i;
+        year.appendChild(opt);
+    }
+}
+createYearOp();
+function createMonthOp() {
+    for(var i=1;i<13;i++){
+        var opt=document.createElement('option');
+        opt.value=i;
+        opt.innerText=i;
+        month.appendChild(opt);
+    }
+}
+createMonthOp();
+function createDayOp(days) {
+    for(var i=1;i<days;i++){
+        var opt=document.createElement('option');
+        opt.value=i;
+        opt.innerText=i;
+        day.appendChild(opt);
+    }
+
+}
+createDayOp(32);
+function createHms(hms) {
+    for(var i=0;i<60;i++){
+        if(i<10){
+            i="0"+i;
+        }
+        var opt=document.createElement('option');
+        opt.value=i;
+        opt.innerText=i;
+        hms.appendChild(opt);
+    }
+
+}
+createHms(hour);
+createHms(minite);
+createHms(second);
+function select(obj) {//返回当前被选择的对象
+    var Index=obj.selectedIndex;
+    var Value=obj.options[Index].value;
+    return Value;
+}
+function getWeekday(w){
+    var weekday=new Array(7);
+    weekday[0]="星期日";
+    weekday[1]="星期一";
+    weekday[2]="星期二";
+    weekday[3]="星期三";
+    weekday[4]="星期四";
+    weekday[5]="星期五";
+    weekday[6]="星期六";
+    return weekday[w];
+}
+function transfer(second) {
+    var days = Math.floor(second / (24 * 3600 * 1000));
+    var leave1 = second % (24 * 3600 * 1000)    //计算天数后剩余的毫秒数
+    var hours = Math.floor(leave1 / (3600 * 1000))
+    //计算相差分钟数
+    var leave2 = leave1 % (3600 * 1000)        //计算小时数后剩余的毫秒数
+    var minutes = Math.floor(leave2 / (60 * 1000))
+    //计算相差秒数
+    var leave3 = leave2 % (60 * 1000)      //计算分钟数后剩余的毫秒数
+    var seconds = Math.round(leave3 / 1000)
+    var time=days + "天 " + hours + "小时 " + minutes + " 分钟" + seconds + " 秒";
+    return time;
+}
+function show(y,m,d,w,h,t,s){
+    var date = new Date();
+    var date1=new Date(y+"/"+m+"/"+d+"  "+h+":"+t+":"+s);
+    var second=date1.getTime()-date.getTime();
+    if(second<0) {
+        second = -second;
+        var time1=transfer(second);
+        document.getElementById('result-wrapper').innerHTML = "现在距离" + y + "年 " + m + "月" + d + "日 " + w + "  " + h + ":" + t + ":" + s + "已经过去了" + time1;
+    }else {
+       var time2=transfer(second);
+        document.getElementById('result-wrapper').innerHTML = "现在距离" + y + "年 " + m + "月" + d + "日 " + w + "  " + h + ":" + t + ":" + s + "还有" +time2;
+
+    }
+   // return document.getElementById('result-wrapper').innerHTML=;
+}
+function timeChange() {
+    var date = new Date();
+      y=select(year);
+      m=select(month);
+      d=select(day);
+      h=select(hour);
+      w=getWeekday(date.getDay());
+      t=select(minite);
+      s=select(second);
+      if(m==1||m==3||m==5||m==7||m==8||m==10||m==12){
+        createDayOp(32);
+    }else if(m==2){
+        if((y%4==0)&&(y%100!=0)){
+            createDayOp(30);
+        }else {createDayOp(29);}
+    }else {
+        createDayOp(31);
+    }
+    show(y,m,d,w,h,t,s);
+}
+
+
+
+
+
+
+
+
+
+</script>
+</html>

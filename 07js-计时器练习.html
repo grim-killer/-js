@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="fade-obj" style="width:300px;height:300px;background:#000;"></div>
+<button id="fade-btn">淡出</button>
+<script>
+    var obj=document.getElementById('fade-obj');
+    var x=document.defaultView.getComputedStyle(obj).getPropertyValue("opacity");
+    var btn=document.getElementById('fade-btn');
+    function showOut() {
+        if(x<=0){
+            btn.disabled=false;
+            btn.innerHTML="淡入";
+            btn.onclick=function () {
+                showIn();
+            }
+            return;
+        }
+
+        if(x!=0){
+            x=x-0.1;
+            obj.style.opacity=x;
+            btn.disabled=true;
+        }
+        setTimeout(showOut,1000);
+    }
+    function showIn() {
+        if(x==1){
+            btn.disabled=false;
+            btn.innerHTML="淡出";
+            btn.onclick=function () {
+                showOut();
+            }
+            return;
+        }
+        if(x!=1){
+            x=x+0.1;
+            obj.style.opacity=x;
+            btn.disabled=true;
+        }
+        setTimeout(showIn,1000)
+    }
+   btn.onclick=function () {
+       showOut();
+   }
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="first-number" type="text" value="0" placeholder="第一个数字">
+<input id="second-number" type="number" value="0" placeholder="第二个数字">
+<button id="add-btn">加</button>
+<button id="minus-btn">减</button>
+<button id="times-btn" onclick="times()">乘</button>
+<button id="divide-btn">除</button>
+<p id="result">运算结果</p>
+<script>
+    document.getElementById("add-btn").onclick=function() {//在js中事件绑定
+        var num1=document.getElementById("first-number").value;
+        var num2=document.getElementById("second-number").value;
+        document.getElementById("result").innerHTML=parseInt(num1)+parseInt(num2);
+
+    }
+
+    document.getElementById("minus-btn").addEventListener("click",minus);//监听机制
+    function  minus() {
+        var num1=document.getElementById("first-number").value;
+        var num2=document.getElementById("second-number").value;
+        document.getElementById("result").innerHTML=parseInt(num1)-parseInt(num2);
+    }
+
+    function  times() {//在DOM中直接绑定<button id="times-btn" onclick="times()">乘</button>
+
+ var num1 = document.getElementById("first-number").value;
+        var num2 = document.getElementById("second-number").value;
+        document.getElementById("result").innerHTML = parseInt(num1) * parseInt(num2);
+    }
+
+    document.addEventListener("click",function (event) {//委托机制
+        var target=event.target;
+        if (target.id=="divide-btn"){
+
+            var num1=document.getElementById("first-number").value;
+            var num2=document.getElementById("second-number").value;
+            console.log(typeof  num1);
+            console.log(parseInt(num1));
+             if(isNaN(parseInt(num1))){
+                 console.log("不是数字");
+             }
+            if(parseInt(num2) == 0){
+                console.log("被除数不能为0");
+            }
+            document.getElementById("result").innerHTML=parseInt(num1)/parseInt(num2);
+        }
+    })
+</script>
+</body>
+</html>

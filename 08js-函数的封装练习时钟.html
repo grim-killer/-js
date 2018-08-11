@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="startTime()">
+<p id="time"></p>
+<p id="showtime"></p>
+<script>
+    //•格式为 YYYY 年 MM 月 DD 日 星期 D HH:mm:ss
+    function startTime() {
+        var today=new Date();
+        var y=today.getFullYear();//年
+        var o=today.getMonth();//月
+        var d=today.getDate();//日
+        var h=today.getHours();//时
+        var m=today.getMinutes();//分
+        var s=today.getSeconds();//秒
+        var w=today.getDay();
+        o=checkTime(o);
+        d=checkTime(d);
+        w=getWeekday(w);
+        h=checkTime(h);
+        m=checkTime(m);
+        s=checkTime(s);
+        show(y,o,d,w,h,m,s);
+        var week=today.getDay();
+        week=Weekday(week);
+        showt(y,o,d,week,h,m,s);
+        t=setTimeout('startTime()',500);
+
+    }
+    function checkTime(i) {
+        if(i<10){
+            i="0"+i;}
+            return i;
+    }
+    function getWeekday(w){
+        var weekday=new Array(7);
+        weekday[0]="星期日";
+        weekday[1]="星期一";
+        weekday[2]="星期二";
+        weekday[3]="星期三";
+        weekday[4]="星期四";
+        weekday[5]="星期五";
+        weekday[6]="星期六";
+        return weekday[w];
+    }
+    function Weekday(w){//返回礼拜几
+        var weekday=new Array(7);
+        weekday[0]="Sunday";
+        weekday[1]="Monday";
+        weekday[2]="Tuesday";
+        weekday[3]="Wednesday";
+        weekday[4]="Thursday";
+        weekday[5]="Friday";
+        weekday[6]="Saturday";
+        return weekday[w];
+    }
+
+    function show(y,o,d,w,h,m,s){
+       return document.getElementById('time').innerHTML=y+"年 "+o+"月"+d+"日 "+w+"  "+h+":"+m+":"+s;
+    }
+    function showt(year,month,day,week,hour,minutes,second) {
+        return document.getElementById('showtime').innerHTML=year+"-"+month+"-"+day+"  "+week+"  "+hour+":"+minutes+":"+second;
+    }
+</script>
+</body>
+</html>

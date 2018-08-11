@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+    <style>
+        select {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<label>
+    <input id="school" name="status" type="radio">
+    School
+</label>
+<label>
+    <input id="company" name="status" type="radio">
+    Company
+</label>
+
+<select id="school-select">
+    <option>北京邮电大学</option>
+    <option>黑龙江大学</option>
+    <option>华中科技大学</option>
+</select>
+
+<select id="company-select">
+    <option>百度</option>
+    <option>爱奇艺</option>
+</select>
+<script>/*
+       document.getElementById('school').onclick=function () {
+           if(document.getElementById('school').checked){
+               var school= document.getElementById('school-select');
+               var company=document.getElementById('company-select');
+                school.style.display='block';//或school.style.cssText="display:block"
+                company.style.display='none';
+               console.log("e");
+           }
+       }
+
+       document.getElementById('company').onclick=function () {
+           if(document.getElementById('company').checked){
+               var school= document.getElementById('school-select');
+               var company=document.getElementById('company-select');
+               school.style.display='none';
+               company.style.display='block';
+               console.log("a");
+           }
+       }*/
+       var school=document.getElementById('school');
+       var company=document.getElementById('company');
+       var schoolSelect=document.getElementById('school-select');
+       var companySelect=document.getElementById('company-select');
+       function show(e){
+           if(e.target.checked){
+               if(e.target.id=="school"){
+                   schoolSelect.style.display="block";
+                   companySelect.style.display="none";
+               }else if(e.target.id="company"){
+                   schoolSelect.style.display="none";
+                   companySelect.style.display="block";
+               }
+           }
+       }
+       school.addEventListener('click',show);
+       company.addEventListener('click',show);
+
+
+</script>
+</body>
+</html>

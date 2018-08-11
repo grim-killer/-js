@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            text-align: center;
+            width: 1210px;
+            margin: 0 auto;
+        }
+        table{
+            margin: 0 auto;
+            border: 4px solid green;
+            padding: 5px;
+        }
+        td{
+            border: 1px solid green;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.write("<div>");
+        document.write("<h3>"+"九九乘法表"+"</h3>");
+        document.write("<table>");
+        for(var i=1;i<10;i++){
+            document.write("<tr>");
+            for(var j=1;j<=i;j++){
+                document.write("<td>"+i+"X"+j+"="+i*j+"</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+        document.write("</div>");
+    </script>
+</body>
+</html>

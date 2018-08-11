@@ -2,9 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+       /*双飞翼布局 三个float
+       *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            float: left;
+            width: 100%;
+            height: 300px;
+            background: #a60000;
+
+        }
+        .left{
+            float: left;
+            width: 220px;
+            height: 300px;
+            background: aqua;
+            margin-left: -100%;
+        }
+        .right{
+            float: right;//或者right都行
+            width: 220px;
+            height: 300px;
+            background: bisque;
+            margin-left: -220px;
+        }*/
+     /* 圣杯布局
+      *{
+           margin: 0;
+           padding: 0;
+       }
+       .container{//正因为它比双飞翼多了这个 所以下面左右两个模块才要position为relative
+           padding: 0 220px;
+       }
+       .main{
+           float: left;
+           width: 100%;
+           height: 300px;
+           background: #a60000;
+
+       }
+       .left{
+           float: left;
+           width: 220px;
+           height: 300px;
+           background: aqua;
+           margin-left: -100%;
+           position: relative;
+           left: -220px;
+       }
+       .right{
+           float: left;
+           width: 220px;
+           height: 300px;
+           background: bisque;
+           position: relative;
+           margin-left: -220px;
+           left: 220px;
+       }*/
+       /*弹性布局*/
+        .container{
+            display: flex;
+        }
+
+        .main{
+            height: 300px;
+            width: 220px;
+            background: aqua;
+        }
+        .left{
+            flex: 1;
+            height: 300px;
+            background: #a60000;
+        }
+        .right{
+            height: 300px;
+            width: 220px;
+            background: bisque;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div class="container">
+    <div class="main"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
 </body>
 </html>

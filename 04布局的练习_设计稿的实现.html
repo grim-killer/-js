@@ -2,9 +2,202 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*header*/
+        .container{
+            width: 960px;
+            margin: 0 auto;
+        }
+        .header{
+            width: 100%;
+            height: 90px;
+            background: black;
+        }
+
+        .header-nav ul{
+            float: right;
+            list-style: none;
+            margin-top: 10px;
+        }
+        .header-nav ul li{
+            float: left;
+            margin-right: 30px;
+        }
+        .header-nav  ul li a{
+            color: white;
+        }
+
+        /*banner*/
+        .banner{
+            width: 100%;
+            background: green;
+            height: 300px;
+            position: relative;
+        }
+
+        .banner ul{
+            position: absolute;
+            top:85%;
+            left:73%;
+            list-style: none;
+        }
+        .banner ul li{
+            margin-right: 5px;
+            display: inline-block;
+            border: 1px solid black;
+            height: 30px;
+            width: 25px;
+            background: ghostwhite;
+            vertical-align: bottom;
+            text-align: center;
+        }
+       .banner ul li:nth-child(2){
+           height: 30px;
+           padding-top: 10px;
+           background: darkgray;
+       }
+   /*nav*/
+        .nav{
+            position: relative;
+            margin-top: 40px;
+            height: 51px;
+        }
+        .nav ul{
+            float: left;
+            list-style: none;
+            position: relative;
+        }
+        .nav ul li{
+            width: 80px;
+            float: left;
+            border: 1px solid ;
+            border-bottom: none;
+            padding: 15px;
+            text-align: center;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            color: gray;
+           background: #eeeeee;
+        }
+        .nav ul li:nth-child(1){
+            background: none;
+        }
+
+        /*content*/
+        .flexfloor{
+
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+        }
+        .floor1{
+            flex: 1 80px;
+            display: flex;
+            flex-flow: row;
+        }
+        .floor1 section{
+            flex: 1;
+            border: 1px solid #cccccc;
+            margin: 5px;
+
+        }
+        .floor2{
+            flex: 1 80px;
+            display: flex;
+            flex-flow: row;
+        }
+        .floor2 section{
+            flex: 1;
+            border: 1px solid #cccccc;
+            margin: 5px;
+        }
+        .floor3{
+            flex: 1 80px;
+            display: flex;
+
+        }
+        .floor3 section{
+            flex: 1;
+            border: 1px solid #cccccc;
+            margin: 5px;
+        }
+        /*footer*/
+        .footer{
+            height: 90px;
+            width: 100%;
+            background: darkgray;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div class="header">
+    <div class="container">
+    <div class="header-nav">
+        <div class="logo" style="float:left;color: white;margin-top: 30px">Logo</div>
+        <div class="header-right-nav">
+
+            <ul class="font-size-fix">
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+
+    </div>
+    </div>
+</div>
+<div class="banner">
+    <div class="container">
+        <div class="banner-nav">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        </div>
+    </div>
+</div>
+<div class="nav">
+    <div class="container">
+        <ul>
+            <li>HOME</li>
+            <li>PROFILE</li>
+            <li>ABOUT</li>
+        </ul>
+    </div>
+    <div style="width: 100%;position: absolute;top: 100%"><hr/></div>
+
+</div>
+<div class="container">
+<div class="flexfloor">
+         <div class="floor1">
+             <section> <p>This is fake content. Your main web page contents would probably go here.</p></section>
+             <section></section>
+             <section></section>
+         </div>
+         <div class="floor2">
+             <section></section>
+             <section></section>
+             <section></section>
+             <section></section>
+         </div>
+         <div class="floor3">
+             <section></section>
+             <section></section>
+             <section></section>
+         </div>
+        </div>
+</div>
+<div class="footer">
+    <div style="color: #eeeeee;text-align: center;padding-top: 15px">@2018 ife.baidu.com</div>
+</div>
 </body>
 </html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <script>
+         var tree = {
+             "id": 0,
+             "name": "root",
+             "left": {
+                 "id": 1,
+                 "name": "Simon",
+                 "left": {
+                     "id": 3,
+                     "name": "Carl",
+                     "left": {
+                         "id": 7,
+                         "name": "Lee",
+                         "left": {
+                             "id": 11,
+                             "name": "Fate"
+                         }
+                     },
+                     "right": {
+                         "id": 8,
+                         "name": "Annie",
+                         "left": {
+                             "id": 12,
+                             "name": "Saber"
+                         }
+                     }
+                 },
+                 "right": {
+                     "id": 4,
+                     "name": "Tony",
+                     "left": {
+                         "id": 9,
+                         "name": "Candy"
+                     }
+                 }
+             },
+             "right": {
+                 "id": 2,
+                 "name": "right",
+                 "left": {
+                     "id": 5,
+                     "name": "Carl",
+                 },
+                 "right": {
+                     "id": 6,
+                     "name": "Carl",
+                     "right": {
+                         "id": 10,
+                         "name": "Kai"
+                     }
+                 }
+             }
+         }
+
+         // 假设id和name均不会重复，根据输入name找到对应的id
+         function findIdByName(name) {
+             function fn(obj) {
+                 if(obj){
+                     if(obj.name==name){
+                         console.log(obj.id);
+                     }
+                     fn(obj.left);
+                     fn(obj.right);
+                 }
+             }
+             fn(tree);
+         }
+         findIdByName("Lee");
+         // 假设id和name均不会重复，根据输入id找到对应的name
+         function findNameById(id) {
+             function fn(obj) {
+                 if(obj){
+                     if(obj.id==id){
+                         console.log(obj.name);
+                     }
+                     fn(obj.left);
+                     fn(obj.right);
+                 }
+             }
+             fn(tree);
+         }
+         findNameById(7);
+
+         // 把这个对象中所有的名字以“前序遍历”的方式全部输出到console中 中左右
+         function getListWithDLR() {
+                 var orderBefer = [];
+                 function fn(obj){
+                     if(obj){
+                         orderBefer.push(obj.name);
+                         fn(obj.left);
+                         fn(obj.right);
+                     }
+             }
+             fn(tree);
+                 console.log(orderBefer);
+         }
+         getListWithDLR();
+
+         // 把这个对象中所有的名字以“中序遍历”的方式全部输出到console中 左中右
+         function getListWithLDR() {
+             var orderBefer = [];
+             function fn(obj){
+                 if(obj){
+                     fn(obj.left);
+                     orderBefer.push(obj.name);
+                     fn(obj.right);
+
+                 }
+             }
+             fn(tree);
+             console.log(orderBefer);
+         }
+         getListWithLDR();
+
+         // 把这个对象中所有的名字以“后序遍历”的方式全部输出到console中 左右中
+         function getListWithLRD() {
+             var orderBefer = [];
+             function fn(obj){
+                 if(obj){
+                     fn(obj.left);
+                     fn(obj.right);
+                     orderBefer.push(obj.name);
+                 }
+             }
+             fn(tree);
+             console.log(orderBefer);
+         }
+         getListWithLRD();
+     </script>
+</body>
+</html>

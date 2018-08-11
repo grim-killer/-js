@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="queue-input" type="text">
+<p id="queue-cont">队列内容：apple-&gt;pear</p>
+<button id="in-btn">入队</button>
+<button id="out-btn">出队</button>
+<button id="font-btn">打印队头元素内容</button>
+<button id="empty-btn">判断队列是否为空</button>
+<br>
+<input id="stack-input" type="text">
+<p id="stack-cont">栈内容：apple-&gt;pear</p>
+<button id="push-btn">进栈</button>
+<button id="pop-btn">退栈</button>
+<button id="font-btn1">打印栈顶元素内容</button>
+<button id="empty-btn1">判断栈是否为空</button>
+
+<script>
+//队列
+  //  var queue = ["apple", "pear"];
+/*队头为数组最后一个元素 且以 -> 连接
+
+    document.getElementById('in-btn').onclick=function () {
+        var content=document.getElementById('queue-input').value;
+        queue.unshift(content);
+        document.getElementById('queue-cont').innerHTML="队列内容："+queue.join('->');
+    }
+    document.getElementById('out-btn').onclick=function () {
+        queue.pop();
+        document.getElementById('queue-cont').innerHTML="队列内容："+queue.join('->');
+    }
+    document.getElementById('font-btn').onclick=function () {
+        document.getElementById('queue-cont').innerHTML="队列内容："+queue[queue.length-1];
+    }
+    document.getElementById('empty-btn').onclick=function () {
+        if(queue.length==0){
+            document.getElementById('queue-cont').innerHTML="队列为空";
+        }else {
+            document.getElementById('queue-cont').innerHTML='队列不为空';
+        }
+    }
+*/
+//队头为数组第一个元素 且以 <- 连接
+  /*  document.getElementById('in-btn').onclick=function () {
+        var content=document.getElementById('queue-input').value;
+        queue.push(content);
+        document.getElementById('queue-cont').innerHTML="队列内容："+queue.join('<-');
+    }
+    document.getElementById('out-btn').onclick=function () {
+        queue.shift();
+        document.getElementById('queue-cont').innerHTML="队列内容："+queue.join('<-');
+    }
+    document.getElementById('font-btn').onclick=function () {
+        document.getElementById('queue-cont').innerHTML="队列内容："+queue[0];
+    }*/
+
+  //栈
+    var stack=["apple","pear"];
+/*栈顶为数组第一个元素 且以-<连接
+    document.getElementById('push-btn').onclick=function () {
+    var content=document.getElementById('stack-input').value;
+    stack.unshift(content);
+    document.getElementById('stack-cont').innerHTML="栈内容："+stack.join('-<');
+}
+    document.getElementById('pop-btn').onclick=function () {
+    stack.shift();
+    document.getElementById('stack-cont').innerHTML="栈内容："+stack.join('-<');
+}
+    document.getElementById('font-btn1').onclick=function () {
+    document.getElementById('stack-cont').innerHTML="栈内容："+stack[0];
+}
+    document.getElementById('empty-btn1').onclick=function () {
+    if(stack.length==0){
+        document.getElementById('stack-cont').innerHTML="栈为空";
+    }else {
+        document.getElementById('stack-cont').innerHTML='栈不为空';
+    }
+}*/
+//栈顶元素为数组最后一个元素 且以->连接
+document.getElementById('push-btn').onclick=function () {
+    var content=document.getElementById('stack-input').value;
+    stack.push(content);
+    document.getElementById('stack-cont').innerHTML="栈内容："+stack.join('->');
+}
+document.getElementById('pop-btn').onclick=function () {
+    stack.pop();
+    document.getElementById('stack-cont').innerHTML="栈内容："+stack.join('->');
+}
+document.getElementById('font-btn1').onclick=function () {
+    document.getElementById('stack-cont').innerHTML="栈内容："+stack[stack.length-1];
+}
+document.getElementById('empty-btn1').onclick=function () {
+    if(stack.length==0){
+        document.getElementById('stack-cont').innerHTML="栈为空";
+    }else {
+        document.getElementById('stack-cont').innerHTML='栈不为空';
+    }
+}
+</script>
+
+</body>
+</html>
