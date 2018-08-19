@@ -2,43 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fbf43d0-7b79-49c3-bb95-3c92932b4925" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/06复杂页面的实现/06复杂页面的实现.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06复杂页面的实现/css/06style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07js-3的小游戏.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07js-dom练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07js-九九乘法表.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07js-事件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07js-修改css样式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07js-修改css样式练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07js-函数练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07js-十进制转二进制.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07js-按照时间的问候.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07js-练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07js-计时器练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08js-string.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08js-函数.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08js-函数时间差.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08js-函数的封装练习时钟.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08js-对象.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08js-对象嵌套.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08js-数组排序.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08js-数组转对象.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08js-数组队列与栈.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02布局的练习.html" beforeDir="false" afterPath="$PROJECT_DIR$/02布局的练习.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03圣杯和双飞翼布局.html" beforeDir="false" afterPath="$PROJECT_DIR$/03圣杯和双飞翼布局.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04布局的练习03.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/04布局的练习_1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/04布局的练习_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/04布局的练习_4三栏.html" beforeDir="false" afterPath="$PROJECT_DIR$/04布局的练习_4三栏.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04布局的练习_5三栏.html" beforeDir="false" afterPath="$PROJECT_DIR$/04布局的练习_5三栏.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04布局的练习_设计稿的实现.html" beforeDir="false" afterPath="$PROJECT_DIR$/04布局的练习_设计稿的实现.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/02.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/02.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/03style_1.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/03style_1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/03style_2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/03style_2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08js-函数时间差.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,12 +20,17 @@
       <file leaf-file-name="08js-对象.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/08js-对象.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="2413">
               <caret line="127" column="35" selection-start-line="127" selection-start-column="35" selection-end-line="127" selection-end-column="35" />
-              <folding>
-                <element signature="e#509#620#0" />
-                <element signature="e#1425#1641#0" />
-              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="08js-数组转对象.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/08js-数组转对象.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="855">
+              <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -68,7 +38,7 @@
       <file leaf-file-name="08js-string.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/08js-string.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
+            <state relative-caret-position="5700">
               <caret line="300" column="7" selection-start-line="300" selection-start-column="7" selection-end-line="300" selection-end-column="7" />
               <folding>
                 <element signature="n#style#0;n#textarea#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -81,23 +51,26 @@
       <file leaf-file-name="08js-函数的封装练习时钟.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/08js-函数的封装练习时钟.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="48" column="5" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="48" selection-end-column="5" />
+            <state relative-caret-position="912">
+              <caret line="48" column="5" selection-start-line="38" selection-start-column="3" selection-end-line="48" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="08js-函数时间差.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/08js-函数时间差.html">
+      <file leaf-file-name="09MIS系统相关-我是精明的小卖家.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/09MIS系统相关-我是精明的小卖家/09MIS系统相关-我是精明的小卖家.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="127" column="6" selection-start-line="127" selection-start-column="6" selection-end-line="127" selection-end-column="6" />
-              <folding>
-                <element signature="e#836#1037#0" />
-                <element signature="e#1139#1147#0" />
-                <element signature="e#1254#1270#0" />
-                <element signature="e#1284#1449#0" />
-              </folding>
+            <state relative-caret-position="-5605">
+              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="08js-邮箱输入提示框.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/08js-邮箱输入提示框demo/08js-邮箱输入提示框.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1634">
+              <caret line="4" column="24" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="4" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -105,7 +78,7 @@
       <file leaf-file-name="08js-number.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/08js-number.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1102">
+            <state relative-caret-position="1463">
               <caret line="101" column="34" selection-start-line="101" selection-start-column="34" selection-end-line="101" selection-end-column="34" />
               <folding>
                 <element signature="e#789#1679#0" />
@@ -117,7 +90,7 @@
       <file leaf-file-name="07js-计时器练习.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/07js-计时器练习.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
+            <state relative-caret-position="380">
               <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -129,7 +102,7 @@
       <file leaf-file-name="08js-数组队列与栈.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/08js-数组队列与栈.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
+            <state relative-caret-position="1558">
               <caret line="82" column="22" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
               <folding>
                 <element signature="e#174#178#0" expanded="true" />
@@ -139,34 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="08js-数组转对象.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/08js-数组转对象.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-              <folding>
-                <element signature="e#138#459#0" />
-                <element signature="e#261#348#0" />
-                <element signature="e#367#453#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="08js-函数.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/08js-函数.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-266">
-              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="07js-练习.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/07js-练习.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" selection-start-line="16" selection-end-line="55" selection-end-column="7" />
+            <state relative-caret-position="247">
+              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -234,6 +184,10 @@
         <option value="$PROJECT_DIR$/08js-函数.html" />
         <option value="$PROJECT_DIR$/08js-函数的封装练习时钟.html" />
         <option value="$PROJECT_DIR$/08js-函数时间差.html" />
+        <option value="$PROJECT_DIR$/08js-邮箱输入提示框.html" />
+        <option value="$PROJECT_DIR$/09MIS系统相关-我是精明的小卖家.html" />
+        <option value="$PROJECT_DIR$/08js-邮箱输入提示框demo/08js-邮箱输入提示框.html" />
+        <option value="$PROJECT_DIR$/09MIS系统相关-我是精明的小卖家/09MIS系统相关-我是精明的小卖家.html" />
       </list>
     </option>
   </component>
@@ -246,10 +200,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="271" />
-    <option name="y" value="88" />
-    <option name="width" value="818" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="578" />
+    <option name="y" value="29" />
+    <option name="width" value="885" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -258,6 +212,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,7 +228,17 @@
             <path>
               <item name="百度前端学院" type="b2602c69:ProjectViewProjectNode" />
               <item name="百度前端学院" type="462c0819:PsiDirectoryNode" />
-              <item name="07js-CSSsprites-gif的实现" type="462c0819:PsiDirectoryNode" />
+              <item name="08js-时间差的显示demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="百度前端学院" type="b2602c69:ProjectViewProjectNode" />
+              <item name="百度前端学院" type="462c0819:PsiDirectoryNode" />
+              <item name="08js-邮箱输入提示框demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="百度前端学院" type="b2602c69:ProjectViewProjectNode" />
+              <item name="百度前端学院" type="462c0819:PsiDirectoryNode" />
+              <item name="09MIS系统相关-我是精明的小卖家" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="百度前端学院" type="b2602c69:ProjectViewProjectNode" />
@@ -284,7 +249,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -306,6 +270,14 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="09MIS系统相关-我是精明的小卖家.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/百度前端学院/09MIS系统相关-我是精明的小卖家/09MIS系统相关-我是精明的小卖家.html" />
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.09MIS系统相关-我是精明的小卖家.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -329,21 +301,26 @@
       <workItem from="1533712075625" duration="18360000" />
       <workItem from="1533784816547" duration="11435000" />
       <workItem from="1533875759674" duration="25382000" />
-      <workItem from="1533954774897" duration="22837000" />
+      <workItem from="1533954774897" duration="25657000" />
+      <workItem from="1534039961337" duration="23852000" />
+      <workItem from="1534121122006" duration="14888000" />
+      <workItem from="1534211568927" duration="25825000" />
+      <workItem from="1534416822664" duration="1771000" />
+      <workItem from="1534567195186" duration="6361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199248000" />
+    <option name="totallyTimeSpent" value="274765000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="271" y="88" width="818" height="728" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29052368" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09956076" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.35031846" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" visible="true" weight="0.34076434" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -362,19 +339,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1830161" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.329653" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -386,20 +363,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="23" />
+      <option name="time" value="33" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/02.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style1.css" />
-    <entry file="file://$PROJECT_DIR$/css/style2.css" />
-    <entry file="file://$PROJECT_DIR$/02b布局的练习.html" />
     <entry file="file://$PROJECT_DIR$/css/style3.css" />
     <entry file="file://$PROJECT_DIR$/css/02.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -597,18 +564,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/08js.html" />
-    <entry file="file://$PROJECT_DIR$/08js-数组转对象.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-          <folding>
-            <element signature="e#138#459#0" />
-            <element signature="e#261#348#0" />
-            <element signature="e#367#453#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/07js-练习.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -616,20 +571,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/08js-string.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="300" column="7" selection-start-line="300" selection-start-column="7" selection-end-line="300" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/08js-数组队列与栈.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
+        <state relative-caret-position="1558">
           <caret line="82" column="22" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
           <folding>
             <element signature="e#174#178#0" expanded="true" />
@@ -640,7 +584,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/08js-number.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
+        <state relative-caret-position="1463">
           <caret line="101" column="34" selection-start-line="101" selection-start-column="34" selection-end-line="101" selection-end-column="34" />
           <folding>
             <element signature="e#789#1679#0" />
@@ -650,7 +594,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/07js-计时器练习.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
+        <state relative-caret-position="380">
           <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -658,41 +602,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/08js-对象.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="127" column="35" selection-start-line="127" selection-start-column="35" selection-end-line="127" selection-end-column="35" />
-          <folding>
-            <element signature="e#509#620#0" />
-            <element signature="e#1425#1641#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/08js-函数.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-266">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state relative-caret-position="247">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/08js-函数时间差.html" />
+    <entry file="file://$PROJECT_DIR$/08js-string.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5700">
+          <caret line="300" column="7" selection-start-line="300" selection-start-column="7" selection-end-line="300" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08js-邮箱输入提示框.html" />
+    <entry file="file://$PROJECT_DIR$/09MIS系统相关-我是精明的小卖家.html" />
     <entry file="file://$PROJECT_DIR$/08js-函数的封装练习时钟.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="48" column="5" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="48" selection-end-column="5" />
+        <state relative-caret-position="912">
+          <caret line="48" column="5" selection-start-line="38" selection-start-column="3" selection-end-line="48" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/08js-函数时间差.html">
+    <entry file="file://$PROJECT_DIR$/08js-对象.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="127" column="6" selection-start-line="127" selection-start-column="6" selection-end-line="127" selection-end-column="6" />
-          <folding>
-            <element signature="e#836#1037#0" />
-            <element signature="e#1139#1147#0" />
-            <element signature="e#1254#1270#0" />
-            <element signature="e#1284#1449#0" />
-          </folding>
+        <state relative-caret-position="2413">
+          <caret line="127" column="35" selection-start-line="127" selection-start-column="35" selection-end-line="127" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08js-数组转对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08js-邮箱输入提示框demo/08js-邮箱输入提示框.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1634">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09MIS系统相关-我是精明的小卖家/09MIS系统相关-我是精明的小卖家.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5605">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <titlei>Title</ttle>
+    <style>
+        li:hover{
+            background: blue;
+            cursor: pointer;
+        }
+        .active{
+            background: bisque;
+        }
+        ul{
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <input id="email-input" type="text" onkeyup="keyup()" >
+    <ul id="email-sug-wrapper" class="email-sug" style="list-style: none;padding: 0;margin: 0"></ul>
+</div>
+<script>
+    // 邮箱后缀List参考
+    var postfixList = ['163.com', 'gmail.com', '126.com', 'qq.com', '263.net'];
+    var theUl =document.getElementById('email-sug-wrapper');
+    var emailInput= document.getElementById('email-input');
+
+    window.onload=function(){
+        emailInput.focus();
+    }
+     var keyup=function(event) {
+         var e = event || window.event || arguments.callee.caller.arguments[0];
+         if(e.keyCode!=38&&e.keyCode!=40&&e.keyCode!=13) {
+             var value=getValue();//获取用户输入
+             var list = clearList();//清空ul
+             createTips(list);//生成提示框中的提示内容,并添加到ul中
+             check(value);//根据输入的内容使提示框显示或者消失
+             resetState();
+         }else if(e.keyCode==38||e.keyCode==40||e.keyCode==13){
+            listenKeyWords();
+         }
+
+
+     }
+
+    function resetState(){
+        var index=Number(findChoosed());
+        if(index!=0){       // 当前选中状态Li不是第一个
+            theUl.children[index].className="";
+            setActive(theUl.children[0]);                       // 设置第一个Li为选中状态
+        }
+    }
+    // 找到选中状态的 li的下标
+    function findChoosed(){
+        var k=0;
+        for(var k in theUl.children){
+            if(theUl.children[k].className=="active"){       // 当前选中状态Li不是第一个
+                return k;
+            }
+        }
+        if(k==0){
+            return k;
+        }
+    }
+
+    function setActive(chooseNode){
+        // 传入一个当前节点，先删除父节点下所有子节点的class=="active"
+        var parent=chooseNode.parentNode;
+        var children=parent.children;
+        for(var i in children){
+            if(children[i].className=="active"){
+                removeClass(children[i]);
+            }
+        }
+        chooseNode.className="active";
+    }
+    function removeClass(removeNode){
+        removeNode.className="";
+    }
+
+    // 监听特殊3个键的键盘事件  enter 13 上38 下40
+    function listenKeyWords(){
+        var index=Number(findChoosed());                // 找到当前为选中状态的Li  清除掉它的选中状态
+        if(event.keyCode==38){                  // 上键
+            if(index!=0){
+                setActive(theUl.children[index-1]);
+            }else{
+                setActive(theUl.lastChild);
+            }
+        }
+        if(event.keyCode==40){
+            console.log("a");// 下键
+            if(index!=theUl.children.length-1){
+                setActive(theUl.children[index+1]);
+            }else{
+                setActive(theUl.firstChild);
+            }
+        }
+       if(event.keyCode==13){                  // 回车
+            emailInput.value=theUl.children[index].innerHTML;
+           theUl.style.display='none';
+           emailInput.focus();
+        }
+
+
+    }
+
+
+
+    function check(value) {//判断是否输入的是空格
+      var list=document.getElementById('email-sug-wrapper');
+      if (value.replace(/(^s*)|(s*$)/g, "").length ==0) {
+          list.style.display='none';
+      }else {
+          list.style.display='';
+      }
+  }
+    function getValue() {  //拿到input输入框的输入内容trim后返回
+        var obj=document.getElementById('email-input');
+        var value=obj.value;
+        value=value.trim();
+        return value;
+
+    }
+    function clearList() {//每次变化时先清空list的内容
+        var list=document.getElementById('email-sug-wrapper');
+        for(var j=list.childNodes.length-1;j>=0;j--){
+            list.removeChild(list.childNodes[j]);
+        }
+        return list;
+    }
+
+    function createTips(list) {
+        var value = getValue();
+        var front;
+        var rest;
+        var count=0;
+                if(value.match("@")!=null) {//拿到用户输入@前的字符
+                    var index = value.indexOf("@");
+                    front = value.slice(0, index);
+                    rest = value.substring(value.lastIndexOf("@") + 1, value.length);
+                }
+                for(var i in postfixList) {
+                        if(postfixList[i].indexOf(rest)==0){
+                            var listItem = document.createElement('li');
+                            listItem.innerText = front+ "@" + postfixList[i];
+                            list.appendChild(listItem);
+                        }else {
+                           count++;//count只是为了判断都不匹配的情况，如果有匹配的情况，count永远不会到字符串数组的长度
+                        }
+                }
+                if(count==postfixList.length){
+                    for (var i = 0; i < postfixList.length; i++) {
+                        front = value.slice(0, index);
+                        var listItem = document.createElement('li');
+                        listItem.innerText = front+ "@" + postfixList[i]; // 把用户输入和每一个postfix进行结合成为每一个Li
+                        list.appendChild(listItem);
+                    }
+                }
+                list.children[0].className='active';
+           return list;//输出列表
+
+
+        }
+        
+        document.getElementById("email-sug-wrapper").onclick=function (e) {
+               var target=e.target;
+                if(target.nodeName.toLowerCase()=="li"){
+                    var value=target.innerText;
+                    document.getElementById('email-input').value=value;
+                    var list=document.getElementById('email-sug-wrapper');
+                     list.style.display='none';
+                }
+            emailInput.focus();
+        }
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
