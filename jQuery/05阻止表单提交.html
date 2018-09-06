@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function () {
+            $("#sub").click(function (event) {
+                var txt=$("#txt").val();
+                if(txt==""){
+                    $("#dv").text("文本值的内容不能为空");
+                    //return false;阻止表单提交
+                    event.preventDefault();
+                }
+            })
+
+        })
+    </script>
+</head>
+<body>
+<form>
+    用户名：<input type="text" id="txt"/><br/>
+            <input type="submit" id="sub"/>
+</form>
+<div id="dv"></div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+           position: absolute;
+        }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script>
+/*        $(function () {
+            $("a.tooltip").mouseover(function (e) {
+                $("<div id='dv'>"+this.title+"</div>").appendTo("body");
+                $("#dv").css({
+                    "position":"absolute",
+                   "top":e.pageY+"px",
+                   "left":e.pageX+"px"
+                }).show();
+            }).mouseout(function () {
+                $("#dv").remove();
+            })
+        })*/
+    $(function () {
+        $("a.tooltip").mouseover(function (e) {
+            //消除鼠标放在a连接上自动显示的title内容
+            this.myTitle=this.title;
+            this.title=""
+            //创建div
+            var tooltip = "<div id='tooltip'>"+this.myTitle+"</div>";
+            $("body").append(tooltip);
+            //设置div的位子跟着鼠标，必须要absolute
+            $("#tooltip").css({
+                "position":"absolute",
+                "top":e.pageY+20+"px",
+                "left":e.pageX+20+"px"
+            }).show("fast");
+        }).mouseout(function () {
+            this.title=this.myTitle;
+            $("#tooltip").remove();
+
+        }).mousemove(function (e){//跟着鼠标移动
+            $("#tooltip").css({
+                "position":"absolute",
+                "top":e.pageY+20+"px",
+                "left":e.pageX+20+"px"
+            })
+        })
+    })
+    </script>
+</head>
+<body>
+
+<p><a href="#" class="tooltip" title="这是我的超链接提示1.">提示1.</a></p>
+<p><a href="#" class="tooltip" title="这是我的超链接提示1.">提示1.</a></p>
+<p><a href="#" title="这是自带提示1.">自带提示1.</a></p>
+<p><a href="#" title="这是自带提示1.">自带提示1.</a></p>
+
+</body>
+</html>

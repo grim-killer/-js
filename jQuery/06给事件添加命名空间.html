@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            height: 300px;
+            width: 300px;
+            background: bisque;
+        }
+        .cls{
+            border: solid 1px black;
+        }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function () {
+            //在所绑定的事件类型后面添加命名空间，这样在删除事件时只需要指定命名空间即可
+            $("div").bind("mouseover.plugin",function () {
+                $(this).toggleClass("cls");
+            }).bind("mouseout.plugin",function () {
+                $(this).toggleClass("cls");
+            }).bind("click",function () {
+                $("body").append("<p>click事件</p>");
+            }).bind("click.plugin",function () {
+                $("body").append("<p>click.plugin事件</p>");
+                console.log("e");
+            });
+           /* $("button").click(function () {
+                //$("div").unbind("mouseover").unbind("mouseout");
+                $("div").unbind(".plugin");
+            });*/
+            $("#btn").click(function () {
+                //感叹号的作用是匹配所有不包含在命名空间中的click方法
+                $("div").trigger("click!");
+            })
+
+        })
+    </script>
+</head>
+<body>
+<div></div>
+<button>移除</button>
+<button id="btn">div的click事件</button>
+</body>
+</html>

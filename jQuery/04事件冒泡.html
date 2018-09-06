@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background: black;
+        }
+        p{
+            height: 50px;
+            width: 50px;
+            background: aqua;
+        }
+        span{
+            height: 30px;
+            width: 30px;
+            background: bisque;
+        }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function () {
+            $("div").click(function () {
+                console.log("我是div");
+            });
+            $("p").click(function (event) {
+                console.log("我是p");
+                event.stopPropagation();
+            });
+            $("span").click(function (event) {
+                console.log("我是span");
+                //停止冒泡 或 return false;
+                event.stopPropagation();
+            });
+        })
+    </script>
+</head>
+<body>
+   <div><p><span>aaaaa</span></p></div>
+</body>
+</html>

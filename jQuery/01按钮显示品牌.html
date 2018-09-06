@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            position: relative;
+            height: 150px;
+            width: 500px;
+            border: solid 1px;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+          width: 100px;
+           display: inline-block;
+            text-align: center;
+        }
+        button{
+            position: absolute;
+            left: 50%;
+            top:80%;
+            margin-left: -50px;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+
+    </style>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() {
+            var $five = $("ul li:gt(5):not(:last)");
+            $five.hide();
+
+            /*     $("#showmore").click(function () {
+                if($five.is(":visible")){
+                    $("#showmore").text("显示全部品牌");
+                    $five.hide();
+            }else{
+
+                    $("#showmore").text("隐藏部分品牌");
+                    $five.show();
+
+                }
+                return false;
+            })
+*/
+            $("#showmore").toggle(function () {
+                $("#showmore").text("隐藏部分品牌");
+                $five.show();
+            }, function () {
+
+
+                $("#showmore").text("显示全部品牌");
+                $five.hide();
+            })
+        })
+    </script>
+</head>
+<body>
+   <div class="box">
+       <ul>
+           <li><a href="#">索尼</a></li>
+           <li><a href="#">三星</a></li>
+           <li><a href="#">尼康</a></li>
+           <li><a href="#">松下</a></li>
+           <li><a href="#">卡西欧</a></li>
+           <li><a href="#">富士</a></li>
+           <li><a href="#">柯达</a></li>
+           <li><a href="#">宾得</a></li>
+           <li><a href="#">理光</a></li>
+           <li><a href="#">奥林巴斯</a></li>
+           <li><a href="#">明基</a></li>
+           <li><a href="#">爱国者</a></li>
+           <li><a href="#">佳能</a></li>
+           <li><a href="#">其他品牌相机</a></li>
+       </ul>
+       <button id="showmore">显示全部品牌</button>
+   </div>
+</body>
+</html>

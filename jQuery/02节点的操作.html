@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function () {
+            //添加节点
+            $("#btn1").click(function () {
+                $("<li>猕猴桃</li>").appendTo($("ul"));
+            });
+            //删除节点
+            $("#btn2").click(function () {
+                $("ul li:last").remove();
+            });
+            //清空节点
+            $("#btn3").click(function () {
+                $("ul li:last").empty();
+            });
+            //复制节点
+          /*  $("ul li").click(function () {
+                $(this).clone().appendTo($("ul"));
+            });*/
+            //复制的新的节点也有复制的功能true
+            //clone(true)
+            $("ul li").click(function () {
+                $(this).clone(true).appendTo($("ul"));
+            });
+            //替换节点
+            $("#btn4").click(function () {
+               // $("ul li").replaceWith("<li>香蕉</li>");
+                $("<li>香蕉</li>").replaceAll("ul li");
+            })
+        })
+
+
+    </script>
+</head>
+<body>
+<ul>
+    <li>苹果</li>
+    <li>橘子</li>
+    <li>桃子</li>
+</ul>
+<input type="button" value="添加节点" id="btn1">
+<input type="button" value="删除节点" id="btn2">
+<input type="button" value="清空节点" id="btn3">
+<input type="button" value="替换节点" id="btn4">
+</body>
+</html>
