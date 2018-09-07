@@ -1,0 +1,285 @@
+
+body{
+    margin-top: -16px;
+}
+
+.maintain{
+    background: url("images/banner.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.maintain header{
+    background: rgba(0,0,0,0.3);
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+}
+
+h2{
+    margin-top: 0;
+}
+#banner{
+
+    height: 1000px;
+}
+nav ul{
+   margin-top: 7px;
+    list-style: none;
+    float: right;
+
+}
+
+nav ul li,nav .logo{
+    display: inline-block;
+    line-height: 50px;
+    margin-right: 20px;
+
+}
+nav ul li a{
+    color: #fff;
+
+}
+nav .logo{
+    margin-top: 7px;
+    margin-left: 7px;
+    float: left;
+}
+nav .logo a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a{
+    display: block;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+#banner .inner .name h1{
+    color:#fff;
+    margin: 0;
+
+}
+#banner .inner p{
+    color: white;
+}
+#banner .inner .name .line{
+    display: inline-block;
+    width: 150px;
+    border: 2px solid #fff;
+    vertical-align: middle;
+
+}
+#banner .inner .name{
+
+    margin-bottom: 50px;
+}
+#banner .inner{
+    width: 190px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top:200px;
+}
+
+#banner button{
+    border: none;
+    background: #e63343;
+    color:#fff;
+    padding: 16px 50px;
+}
+
+#banner .inner .more{
+    margin-top: 430px;
+}
+
+#banner .inner .more a{
+    text-decoration: none;
+}
+
+
+
+/*内容*/
+
+.content .content-one{
+    background: #169d8c;
+
+    color: #ffffff;
+}
+.content .content-one .inner{
+
+    width: 400px;
+    margin: 0 auto;
+}
+.content .content-one h2{
+    margin-top:0;
+    margin-bottom: 30px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+
+.content .content-one p{
+    font-size: 18px;
+    line-height:30px;
+}
+ .big-line{
+    display: inline-block;
+    margin-left: -100px;
+     width:600px;
+    border: 1px solid #000;
+}
+.content .content-one .inner .icon{
+    padding-top:  50px;
+    padding-bottom: 50px;
+
+}
+.content .content-one .inner .item{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin:20px;
+    border:1px solid #17796c;
+    transform:rotate(45deg);
+}
+
+/*关于图片加文字*/
+.content-two .article-preview{
+    background: #1f4259;
+}
+.content-two .article-preview .img1{
+    width: 45%;
+    float: left;
+    font-size: 0;
+
+}
+.content-two .article-preview .img2{
+    width: 45%;
+    float: right;
+    font-size: 0;
+
+}
+
+.content-two .article-preview img{
+    width: 100%;
+}
+
+.content-two .article-preview .article{
+    color: #fff;
+   padding-top: 200px;
+   margin-left:900px;
+
+}
+
+
+.content-two .article-preview .article2{
+    float: left;
+    color: #fff;
+    padding-top:200px;
+    margin-left: 200px;
+}
+
+
+/*第三部分*/
+.content .content-three{
+    background: #169d8c;
+
+    color: #ffffff;
+}
+.content .content-three .inner{
+            width: 400px;
+            margin: 0 auto;
+        }
+
+.content .content-three .inner  h2{
+    margin-top:0;
+    margin-bottom: 30px;
+    padding-top: 100px;
+    text-align: center;
+}
+.content .content-three p{
+    font-size: 18px;
+    line-height:30px;
+}
+.content-three .inner-list{
+    width: 700px;
+    margin: 0 auto;
+}
+.content-three .list{
+    margin-top: 80px;
+    padding-left: 0;
+    list-style: none;
+
+
+}
+
+.content-three .list .list-item{
+    border: 1px solid #1f4259;
+    float: left;
+    width: 348px;
+    height: 348px;
+}
+
+.content-three .list .list-item img{
+    width: 348px;
+    height: 348px;
+}
+
+/*页脚*/
+footer .wrapper{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+footer .wrapper .footer-pic{
+    height: 200px;
+}
+
+.share{
+    background: #1f4259;
+    height: 200px;
+}
+
+footer .wrapper .share-group{
+    list-style: none;
+    text-align: center;
+    padding-top: 50px;
+}
+
+footer .wrapper .copy{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+footer .wrapper .share-group li{
+    font-size: 15px;
+    display: inline-block;
+    margin: 5px;
+}
+footer{
+    margin-top: 0;
+    font-size: 0;
+}
+
+.footer-pic{
+    font-size: 30px;
+    padding-top: 100px;
+    height: 200px;
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    margin-top: 0;
+}
+
+.content-three{
+    font-size: 0;
+}
+
+.content-three h2{
+    font-size: 40px;
+}
